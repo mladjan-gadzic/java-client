@@ -4,11 +4,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>io.armadaproject</groupId>
-  <artifactId>armada-grpc-java-client</artifactId>
+  <artifactId>java-client</artifactId>
   <version>0.0.4</version>
   <packaging>jar</packaging>
 
-  <name>armada-grpc-java-client</name>
+  <name>java-client</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -25,13 +25,6 @@
     <org.junit.jupiter.version>5.11.1</org.junit.jupiter.version>
     <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
   </properties>
-
-  <distributionManagement>
-    <repository>
-      <id>github</id>
-      <url>https://maven.pkg.github.com/mladjan-gadzic/armada-grpc-java-client</url>
-    </repository>
-  </distributionManagement>
 
   <build>
     <plugins>
