@@ -24,7 +24,7 @@ import io.grpc.Metadata;
 import io.grpc.stub.MetadataUtils;
 import java.util.Iterator;
 
-public class ArmadaClient {
+public class ArmadaClient implements AutoCloseable {
 
   private final ManagedChannel channel;
 
@@ -84,4 +84,8 @@ public class ArmadaClient {
     return jobsBlockingStub.getJobStatus(jobStatusRequest);
   }
 
+  @Override
+  public void close() throws Exception {
+    channel.shutdown();
+  }
 }
